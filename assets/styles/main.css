@@ -52,6 +52,7 @@ header{
 
 .btn:hover{
     background-color: #40042180;
+    color: #fdeded;
 }
 
 /* body */
@@ -85,6 +86,7 @@ footer{
 
 #extra li:hover{
     background-color: #40042180;
+    color: #e0d0d0;
 }
 
 #extra li:active{
