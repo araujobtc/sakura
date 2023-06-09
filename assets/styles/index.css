@@ -1,39 +1,320 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Sniglet&display=swap');
 
-#homepage{
+*{
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+/* header */
+
+#main-header{
+    width: 100%;
+    height: 55px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #d3546840;
+    backdrop-filter: blur(25px);
 }
 
-#homepage div{
+#logo{
+    width: 100px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Sniglet', sans-serif;
+}
+
+#logo img{
+    border-radius: 50%;
+}
+
+#navbar{
+    width: 500px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: #40042180;
+    color: #fdeded;
+}
+
+/* body */
+
+body{
+    width: 100%;
+    background-color: #291515;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
-    width: 350px;
 }
 
-#homepage h1{
-    font-family: 'Sofia', sans-serif;
-    font-size: 80px;
-    margin: 30px;
-}
 
-#homepage a{
-    margin: 20px;
-}
+/* footer */
 
-#homepage div blockquote{
+footer{
     width: 100%;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
+    padding: 10px;
+    margin-top: 15px;
+    position: static;
+    background-color: #444;
 }
 
-#img-sakura{
-    width: 600px;
+#reference, #reference li{
+    margin: 15px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#reference li:hover{
+    background-color: #40042180;
+    color: #e0d0d0;
+}
+
+#reference li:active{
+    background-color: #d3546840;
+}
+
+#reference p{
+    font-size: 1.2em;
+}
+
+#dev-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#social-links{
+    display: flex;
+    justify-content: center;
+}
+
+#social-links img{
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#social-links img:hover {
+    background-color: #d3546840;
+}
+
+#social-links img:active {
+    background-color: #40042180;
+}
+
+@media screen and (max-width: 1199px){
+    #img-sakura{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    #logo span{
+        display: none;
+    }
+
+    #navbar{
+        width: 350px;
+    }
+
+    p, a, span{
+        font-size: 13px;
+    }
+        
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    h3{
+        font-size: 21px;
+    }
+    h4{
+        font-size: 19px;
+    }
+    h5{
+        font-size: 17px;
+    }
+    h6{
+        font-size: 15px;
+    }
+
+    /*index*/
+    #homepage{
+        justify-content: center;
+    }
+
+    #homepage .container{
+        height: 100vh;
+        width: 100vw;
+        padding: 15px;
+        position: absolute;
+        right: 0;
+        background-color: #0000008a;
+    }
+    
+    #img-sakura{
+        width: 450px;
+    }
+
+    #container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #project .container{
+        width: 80%;
+        height: 60%;
+    }
+
+    /*curiosidades - cultura*/
+    article{
+        width: 95%;
+    }
+    aside{
+        width: 95%;
+        position: relative;
+        right: auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .page-nav h2{
+        display: none;
+    }
+    .page-nav ul{
+        display: inline-flex;
+    }
+    .page-nav li{
+        width: 110px;
+        text-align: center; /*colocar no css dele*/
+    }
+    table{
+        margin: 5px 0 5px 5px;
+    }
+    
+    .local{
+        font-size: 11px;
+    }
+    
+    .c1{
+        width: 25%;
+        padding: 0;
+    }
+    
+    .c2{
+        width: 75%;
+        padding: 10px;
+    }
+    
+    .curio{
+        display: none;
+    }
+    
+    .c1, .c2, .c3, .c2 a{
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    /* quiz */
+    #wrapper{
+        width: 90%;
+    }
+    .question{
+        font-size: 19px;
+    }
+    .answer{
+        margin-top: 15px;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 480px){
+   #navbar{
+        width: 300px;
+    }
+
+    p, a, span{
+        font-size: 12px;
+    }
+        
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    h5{
+        font-size: 16px;
+    }
+    h6{
+        font-size: 14px;
+    }
+
+    /* index */
+    #img-sakura{
+        width: 100%;
+    }
+
+    /*curiosidades - cultura*/
+
+    .page-nav ul{
+        width: 100%;
+    }
+    .page-nav li{
+        width: 95px;
+        margin: 5px;
+    }
+    
+    .c1{
+        width: 15%;
+        padding: 0;
+    }
+    
+    .c2{
+        width: 75%;
+        padding: 10px;
+    }
+    
+    .c1, .c2, .c3, .c2 a{
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    /* quiz */
+    .question{
+        font-size: 15px;
+        width: 90%;
+        align-self: center;
+    }
+    .answer{
+        margin-top: 15px;
+        padding-left: 25px;
+    } 
 }
