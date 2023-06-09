@@ -1,10 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="pt">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/styles/normalize.css">
-        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="assets/styles/index.css">
         <link rel="stylesheet" href="assets/styles/curiosidades.css">
         
         <title>Sakura</title>
@@ -25,6 +27,16 @@
         </header>
         
         <div id="container">
+            <aside class="intern-nav">
+                <nav class="page-nav">
+                    <h2>Tópicos</h2>
+                    <ul>
+                        <li><a href="#tree">A árvore</a> 
+                        <li><a href="#fruit">A fruta</a> 
+                        <li><a href="#curiosity">Curiosidades</a> 
+                    </ul>
+                </nav>
+            </aside>
             <article>
                 <h1>Cerejeira</h1>
                 <section id="tree">
@@ -32,7 +44,7 @@
                     <p>
                         As cerejeiras são árvores frutíferas de clima temperado e originárias principalmente da Ásia. No Brasil, as cerejeiras são espécies introduzidas, e o auge da floração acontece durante o inverno, principalmente entre os meses de julho e início de agosto.<br>
                         As cerejeiras são árvores decíduas de diversas espécies e cultivares do gênero Prunus e subgênero Cerasus, pertencentes à família Rosaceae. As folhas são ovaladas com margem serrilhadas e antes de caírem, apresentam mudanças gradativas de cor, passando do verde ao amarelado, marrom ou vermelho.<br>
-                        A floração da cerejeira-do-Japão recebe o nome de Sakura, festejada em sua terra natal ao marcar a chegada da primavera. A flor da cerejeira é um símbolo muito importante para a cultura nipônica, fonte de inspiração para poemas e trabalhos artísticos. O ato de contemplar as flores é chamado Hanami, um costume que mobiliza milhares de pessoas para parques, onde são realizados piqueniques e longos encontros entre familiares e amigos.
+                        A floração da cerejeira do Japão recebe o nome de Sakura, festejada em sua terra natal ao marcar a chegada da primavera. A flor da cerejeira é um símbolo muito importante para a cultura nipônica, fonte de inspiração para poemas e trabalhos artísticos. O ato de contemplar as flores é chamado Hanami, um costume que mobiliza milhares de pessoas para parques, onde são realizados piqueniques e longos encontros entre familiares e amigos.
                     </p>
                     <a href="#reference">Mais informação em: Escola de botânica</a>
                 </section>
@@ -49,10 +61,6 @@
                 </section>
                 <section id="curiosity">
                     <h2>Curiosidades</h2>
-                    <h3>Simbologia</h3>
-                    <p>
-                        A flor de cerejeira é repleta de simbologias que remetem à beleza feminina e simboliza, ao amor, à felicidade, renovação e esperança. A árvore, de origem asiática, é conhecida no Japão por “Sakura” e é o símbolo nacional do país, onde estão documentadas mais de 300 espécies de cerejeiras.<br>
-                    </p>
                     <h3>A lenda da Sakura</h3>
                     <p>
                         A flor de cerejeira também permeia lendas e histórias no Japão. Uma das mais famosas conta que a palavra “Sakura”, que em português significa flor de cerejeira, é na verdade o nome da princesa Konohana Sakuya Hime que, ao cair do céu perto do Monte Fuji, teria aterrissado em uma cerejeira e se transformado em uma linda flor.<br>
@@ -67,38 +75,52 @@
                         <tr>
                             <th class="c1">Cerejeira</th>
                             <th class="c2">Descrição</th>
-                            <th class="c3">Imagem</th>
+                            <th class="c3 curio">Imagem</th>
                         </tr>
                         <tr>
                             <td class="c1">Somei Yoshino</td>
                             <td class="c2">
-                                Esta espécie é a mais comum no Japão, sendo cultivada desde o período Edo. Elas podem ser vistas primeiro florescendo no final de março em Kyushu e Shikoku, no final de abril em Tóquio, e maio em áreas do norte do país como Akita e Aomori.<br>
-                                Ela é uma variedade de flor única, cada uma composta por apenas cinco pétalas, de cor rosa tão pálida, que parecem quase brancas. As flores são agrupadas em cachos, que se abrem antes das folhas da árvore, caindo dentro de uma semana.
+                                Esta espécie é a mais comum no Japão, sendo cultivada desde o período Edo. Elas podem ser vistas primeiro florescendo no final de março em 
+                                <span class="local">Kyushu</span> e 
+                                <span class="local">Shikoku</span>, no final de abril em 
+                                <span class="local">Tóquio</span>, e maio em áreas do norte do país como 
+                                <span class="local">Akita</span> e 
+                                <span class="local">Aomori</span>.<br>
+                        class="intern-nav"class="intern-nav"        Ela é uma variedade de flor única, cada uma composta por apenas cinco pétalas, de cor rosa tão pálida, que parecem quase brancas. As flores são agrupadas em cachos, que se abrem antes das folhas da árvore, caindo dentro de uma semana.
                             </td>
-                            <td class="c3"><img src="assets/images/somei-yoshino.jpg" alt="somei yoshino flor"></td>
+                            <td class="c3 curio"><img src="assets/images/somei-yoshino.jpg" alt="somei yoshino flor"></td>
                         </tr>
                         <tr>
                             <td class="c1">Yamazakura</td>
                             <td class="c2">
-                                Yamazakura ou Hill Cherry está entre as flores de cerejeira selvagens mais vistas entre as montanhas do Japão. Como na espécie Yoshino, essas flores também têm cinco pétalas e são rosa claro. Elas se abrem normalmente ao mesmo tempo que as folhas da árvore, entre março e abril na área de Kanto.
+                                Yamazakura ou Hill Cherry está entre as flores de cerejeira selvagens mais vistas entre as montanhas do Japão. Como na espécie Yoshino, essas flores também têm cinco pétalas e são rosa claro. Elas se abrem normalmente ao mesmo tempo que as folhas da árvore, entre março e abril na área de 
+                                <span class="local">Kanto</span>.
                             </td>
-                            <td class="c3"><img src="assets/images/yamazakura.jpg" alt="yamazakura flor"></td>
+                            <td class="c3 curio"><img src="assets/images/yamazakura.jpg" alt="yamazakura flor"></td>
                         </tr>
                         <tr>
                             <td class="c1">Kanzan</td>
                             <td class="c2">
                                 A espécie Kanzan é classificada como um Yaezakura ou “sakura de dupla flor”, uma categoria que inclui qualquer cerejeira de flores com mais de cinco pétalas. Uma Kanzan pode ter de 20 a 50 pétalas, além de serem facilmente reconhecíveis pela sua tonalidade rosa vibrante em cachos volumosos. <br>
-                                A árvore cresce entre 8 e 12 metros de altura, por isso, é considerada uma das mais ornamentais dentre as cerejeiras. Suas flores tendem a abrir em meados de abril em Tóquio
+                                A árvore cresce entre 8 e 12 metros de altura, por isso, é considerada uma das mais ornamentais dentre as cerejeiras. Suas flores tendem a abrir em meados de abril em 
+                                <span class="local">Tóquio</span>.
                             </td>
-                            <td class="c3"><img src="assets/images/kanzan.jpg" alt="kanzan flor"></td>
+                            <td class="c3 curio"><img src="assets/images/kanzan.jpg" alt="kanzan flor"></td>
                         </tr>
                         <tr>
                             <td class="c1">Shidarezakura</td>
                             <td class="c2">
                                 Essa espécie é também chamada de Weeping Cherry (Cerejeiras Chorões), pois suas flores ficam caídas nos galhos da árvore. Elas florescem no início da primavera, cerca de uma semana antes do Somei Yoshino.<br>
-                                A Shidarezakura mais famosa é o Miharu Takizakura (Cachoeira da Cerejeira Miharu), localizada em Fukushima. A árvore tem mais de 1.000 anos e é uma das cinco grandes cerejeiras do Japão. Além disso, a Shidarezakura é considerada a flor oficial de Kyoto, florescendo no início de abril.
+                                A Shidarezakura mais famosa é o Miharu Takizakura (Cachoeira da Cerejeira Miharu), localizada em 
+                                <span class="local">Fukushima</span>. A árvore tem mais de 1.000 anos e é uma das cinco grandes cerejeiras do Japão. Além disso, a Shidarezakura é considerada a flor oficial de 
+                                <span class="local">Kyoto</span>, florescendo no início de abril.
                             </td>
-                            <td class="c3"><img src="assets/images/shidarezakura.jpg" alt="shidarezakura flor"></td>
+                            <td class="c3 curio"><img src="assets/images/shidarezakura.jpg" alt="shidarezakura flor"></td>
+                        </tr>
+                        <tr>
+                            <td class="c1">Outros</td>
+                            <td class="c2"><a href="https://conexaomarilia.com.br/2023/03/24/sakura-conheca-os-diferentes-tipos-de-cerejeiras/" target="external">&#x1F517; Diferentes tipos de Cerejeiras</a></td>
+                            <td class="c3 curio"> - </td>
                         </tr>
                     </table> 
                     <a href="#reference">Mais informação em: Total Construção</a>
@@ -106,16 +128,6 @@
                 <a id="totop" href="#top">&uArr; Topo</a>
             </article>
             
-            <aside>
-                <nav class="page-nav">
-                    <h2>Tópicos</h2>
-                    <ul>
-                        <li><a href="#tree">A árvore</a> 
-                        <li><a href="#fruit">A fruta</a> 
-                        <li><a href="#curiosity">Curiosidades</a> 
-                    </ul>
-                </nav>
-            </aside>
         </div>
 
         <footer>
@@ -126,6 +138,7 @@
                     <li><a href="https://www.escoladebotanica.com.br/post/cerejeira" target="external">Escola de Botânica - A floração da cerejeira</a>
                     <li><a href="https://brasilescola.uol.com.br/frutas/cereja.htm" target="external">Brasil Escola - Cereja</a>
                     <li><a href="https://www.totalconstrucao.com.br/flor-de-cerejeira/" target="external">Total Construção - Flor de Cerejeira</a>
+                    <li><a href="https://pt.wikipedia.org/wiki/Cerejeira" target="external">Wikipédia - Cerejeira</a>
                 </ul>
             </div>
             <div id="dev-info">
