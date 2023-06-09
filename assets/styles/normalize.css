@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 14px;
+    font-size: 15px;
     text-decoration: none;
     list-style: none;
+    outline: none;
+    text-align: justify;   
 }
 
 article, aside, details, figcaption, figure, 
@@ -14,22 +16,22 @@ footer, header, hgroup, menu, nav, section {
 }
 
 h1{
-    font-size: 28px;
+    font-size: 32px;
 }
 h2{
-    font-size: 24px;
+    font-size: 25px;
 }
 h3{
     font-size: 22px;
 }
 h4{
-    font-size: 20px;
+    font-size: 21px;
 }
 h5{
-    font-size: 18px;
+    font-size: 19px;
 }
 h6{
-    font-size: 16px;
+    font-size: 17px;
 }
 
 table {
