@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+#homepage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 90vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 350px;
+}
+
+#homepage h1{
+    font-family: 'Sofia', sans-serif;
+    font-size: 60px;
+    margin: 30px;
+}
+
+#homepage a{
+    margin: 20px;
+}
+
+#homepage div blockquote{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#img-sakura{
+    width: 600px;
+}
+
+#project{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project .container{
+    width: 60%;
+    height: 70%;
+    border: 1px solid #b3546840;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#project p{
+    margin-top: 15px;
+}
+
+#project p:hover{
+    color: #ffd4ea;
+    transition: .3s ease-in-out;
+}
+
+#project p::first-letter{
+    font-size: 20px;
+    font-family: 'Sofia', sans-serif;
+}
