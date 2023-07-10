@@ -1,10 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="pt">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/styles/normalize.css">
-        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="assets/styles/index.css">
         <link rel="stylesheet" href="assets/styles/quiz.css">
         
         <title>Sakura</title>
@@ -35,7 +37,7 @@
                         <div class="answer"><input type="radio" name="q1" id="a31"><label for="a31">Vermelha</label></div>
                     </div>
                     <div class="question-box">
-                        <h3 id="question">02 - Qual é o nome científico da cerejeira?</h3>
+                        <h3 class="question">02 - Qual é o nome científico da cerejeira?</h3>
                         <div class="answer"><input type="radio" name="q2" id="a12"><label for="a12">Prunus cerasifera</label></div>
                         <div class="answer"><input type="radio" name="q2" id="a22"><label for="a22">Prunus persica</label></div>
                         <div class="answer right"><input type="radio" name="q2" id="a32"><label for="a32">Prunus serrulata</label></div>
@@ -88,19 +90,23 @@
                         <div class="answer"><input type="radio" name="q10" id="a20"><label for="a20">Amarena</label></div>
                         <div class="answer right"><input type="radio" name="q10" id="a30"><label for="a30">Sakuranbo</label></div>
                     </div>
-                    <button type="button" id="verify" class="btn" onclick="showanswers()">Verificar respostas</button>
+                    <div id="btn-quiz">
+                        <button type="button" id="verify" class="btn" onclick="showanswers()">Verificar respostas</button>
+                        <button type="button" id="reload" class="btn" onclick="window.location.reload()">&#10226;</button>
+                    </div>
                 </form>
             </div>
         </div>
 
         <footer>
-            <div id="extra">
-                <h2>Links que possam interessar</h2>
+            <div id="reference">
+                <h2>Referências</h2>
                 <ul>
                     <li><a href="https://sites.unipampa.edu.br/programaarborizacao/cerejeira/" target="external">Unipampa - Cerejeira</a>
                     <li><a href="https://www.escoladebotanica.com.br/post/cerejeira" target="external">Escola de Botânica - A floração da cerejeira</a>
-                    <li><a href="#" target="external">Extra</a>
-                    <li><a href="#" target="external">Extra</a>
+                    <li><a href="https://brasilescola.uol.com.br/frutas/cereja.htm" target="external">Brasil Escola - Cereja</a>
+                    <li><a href="https://www.totalconstrucao.com.br/flor-de-cerejeira/" target="external">Total Construção - Flor de Cerejeira</a>
+                    <li><a href="https://pt.wikipedia.org/wiki/Cerejeira" target="external">Wikipédia - Cerejeira</a>
                 </ul>
             </div>
             <div id="dev-info">

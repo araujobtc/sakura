@@ -1,7 +1,7 @@
 #container{
     min-height: 90vh;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,11 +12,11 @@
     width: 60%;
     height: 70%;
     margin: 10px;
-    padding: 50px;
+    padding: 30px;
     background-color: #5f333a;
     border-radius: 10px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -24,7 +24,9 @@
 /* question - answers */
 
 .question-box{
-    margin-bottom: 25px;
+    margin: 25px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .answer{
@@ -37,16 +39,30 @@
 }
 
 /* verify questions */
+#btn-quiz{
+    display: inline-flex;
+    margin: 30px 0 0 20px;
+    width: 270px;
+    justify-content: space-between;
+}
 
-#verify{
-    width: 150px;
+
+#verify, #reload{
+    width: 200px;
     align-self: flex-end;
-    margin-top: 30px;
     background-color: #916678;
     cursor: pointer;
 }
 
-#verify:hover{
+#reload{
+    width: 50px;
+    padding: 0;
+    align-self: flex-end;
+    background-color: #916678;
+    cursor: pointer;
+}
+
+#verify:hover, #reload:hover{
     background-color: #b3637a;
 }
 
@@ -59,3 +75,4 @@
     width: 300px;
     border-radius: 10px;
 }
+
