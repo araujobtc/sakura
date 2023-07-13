@@ -105,3 +105,81 @@ aside{
     background: #3b3b3b;
     border-radius: 20px;
 }
+
+/*fiquei com medo de dar conflito em algo então depois eu verifico essa parte
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  height: 100vh;
+  display: flex;
+  background: #fa9cea;
+    
+}
+#container{
+  display: flex;
+  flex-direction: column;
+}
+
+  input[type="radio"]{
+    display: none;
+  }
+  label{
+    border-radius: 15px;
+    background:antiquewhite;
+    margin: 50px;
+    padding: 10px;
+    
+  }
+
+  .cartas{
+    width: 100vw;
+    height: 75vh;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    justify-content: center;
+
+  }
+  
+  .carta {
+    width: calc(25% - 10px);
+    height: calc(22% - 10px);
+    max-width: 200px;
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  }
+  
+  .carta:active {
+    transform: scale(0.95);
+    transition: transform .2s;
+  }
+  
+  .carta.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .frenteCarta,
+  .versoCarta {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #e871f8;
+    backface-visibility: hidden;
+  }
+  
+  .frenteCarta {
+    transform: rotateY(180deg);
+  }
+*/
