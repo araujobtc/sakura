@@ -3,6 +3,7 @@
     min-height: 90vh;
     margin: 20px;
     display: flex;
+    flex-direction: column;
 }
 
 article{
@@ -104,4 +105,28 @@ aside{
 .page-nav li:hover{
     background: #3b3b3b;
     border-radius: 20px;
+}
+
+#localizacao{
+    margin: 30px;
+    padding: 15px;
+    background: #b3546840;
+    border-radius: 20px;
+    max-width: 40vw;
+}
+#localizacao button{
+    background-color: #b3546840;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+#mostrar-dist{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: azure;
+}
+#localizacao button:hover{
+    background-color: #3b3b3b;
+    
 }
