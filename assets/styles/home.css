@@ -66,3 +66,19 @@
     font-size: 20px;
     font-family: 'Sofia', sans-serif;
 }
+
+#style-project{
+    width: 60%;
+    margin-top: 50px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#style-project select{
+    min-width: 50px;
+    padding: 5px;
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+}
