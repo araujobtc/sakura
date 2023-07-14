@@ -1,15 +1,11 @@
-/*em uma tela grande da ruim*/
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-  
-body {
-
-  display: flex;
-  
     
+body {
+  display: flex; 
 }
 #container{
   display: flex;
@@ -19,16 +15,17 @@ body {
 input[type="radio"]{
     display: none;
 }
-
 label{
-    border-radius: 15px;
-    background:#b3546971;
+    border-radius: 30px;
+    background:rgba(202, 92, 116, 0.329);
     margin: 50px;
-    padding: 15px;
-    color:white;
-    
+    padding: 15px;     
+    color: white; 
 }
-
+label:hover{
+    background: rgba(202, 92, 116, 0.178);
+}
+  
 .cartas{
     width: 100vw;
     height: 75vh;
@@ -40,10 +37,10 @@ label{
     justify-content: center;
 
 }
-  
+    
 .carta {
     width: calc(25% - 10px);
-    height: calc(22% - 10px);
+    height: calc(27% - 10px);
     max-width: 200px;
     margin: 5px;
     position: relative;
@@ -52,25 +49,29 @@ label{
     transition: transform .5s;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
-  
+    
 .carta:active {
     transform: scale(0.95);
     transition: transform .2s;
 }
-  
+    
 .carta.flip {
     transform: rotateY(180deg);
 }
-  
+    
 .frenteCarta,
 .versoCarta {
     width: 100%;
     height: 100%;
     padding: 20px;
     position: absolute;
-    border-radius: 15px;
-    background: #b3546971;
+    border-radius: 5px;
+    background: rgba(202, 92, 116, 0.329);
     backface-visibility: hidden;
+}
+    
+.frenteCarta {
+    transform: rotateY(180deg);
 }
   
 .frenteCarta {
