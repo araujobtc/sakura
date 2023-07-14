@@ -105,5 +105,8 @@ aside{
     background: #3b3b3b;
     border-radius: 20px;
 }
-
+#reference{
+  position: relative;
+  bottom: 0;
+}
 
