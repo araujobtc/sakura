@@ -1,6 +1,6 @@
 let quiz = {
-    1: ['Qual é a cor das flores da cerejeira?', ['Rosa', 'Branca', 'Vermelha']],
-    2: ['Qual é o nome científico da cerejeira?', ['Prunus serrulata', 'Prunus cerasifera', 'Prunus persica']],
+    1: ['Qual é a cor das flores da cerejeira?', ['Branca', 'Rosa', 'Vermelha']],
+    2: ['Qual é o nome científico da cerejeira?', ['Prunus cerasifera', 'Prunus persica', 'Prunus serrulata']],
     3: ['De onde a cerejeira é originária?', ['Japão', 'China','Coreia']],
     4: ['Quais são os principais produtos derivados da cerejeira?', ['Frutas e madeira', 'Flores e folhas', 'Raízes e sementes']],
     5: ['Qual é o período do ano em que as cerejeiras florescem?', ['Primavera', 'Verão', 'Outono']],
@@ -8,17 +8,17 @@ let quiz = {
     7: ['Qual é o significado cultural da cerejeira no Japão?', ['Pureza e beleza', 'Força e coragem', 'Sabedoria e conhecimento']],
     8: ['Qual é o nome do famoso festival de cerejeiras em Washington, D.C.?', ['Festival das Cerejeiras em Flor', 'Festival da Primavera', 'Festival das Flores']],
     9: ['Qual é o nome da técnica de cultivo de cerejeiras em que as árvores são podadas para formar uma cúpula?', ['Niwaki', 'Bonsai', 'Ikebana']],
-    10: ['Qual é o nome dado às cerejas japonesas usadas em sobremesas e bebidas?', ['SakuranboMaraschino', 'Amarena', 'Maraschino']],
-    11: ['s', ['para', 'teste', 'aaa']],
-    12: ['d', ['para', 'teste', 'aaa']],
-    13: ['e', ['para', 'teste', 'aaa']],
-    14: ['3', ['para', 'teste', 'aaa']],
-    15: ['v', ['para', 'teste', 'aaa']],
-    16: ['n', ['para', 'teste', 'aaa']],
-    17: ['q', ['para', 'teste', 'aaa']],
-    18: ['w', ['para', 'teste', 'aaa']],
-    19: ['i', ['para', 'teste', 'aaa']],
-    20: ['b', ['para', 'teste', 'aaa']]
+    10: ['Qual é o nome dado às cerejas japonesas usadas em sobremesas e bebidas?', ['Maraschino', 'Amarena', 'Sakuranbo']],
+    11: ['Quantos dias, em média, as flores de sakura permanecem desabrochadas?', ['1-2 semanas', '1-2 dias', '1-2 meses']],
+    12: ['A sakura é uma árvore:', ['Caducifólia', 'Perene', 'Sempre-verde']],
+    13: ['A sakura é uma árvore resistente ao frio?', ['Sim', 'Não', 'Depende da variedade']],
+    14: ['As flores de sakura são conhecidas por desabrocharem de forma:', ['Depende da variedade', 'Rápida', 'Lenta']],
+    15: ['As flores de sakura têm um aroma:', ['Forte', 'Suave', 'Sem cheiro']],
+    16: ['A sakura é uma árvore:', ['Ornamental', 'Frutífera', 'Medicinal']],
+    17: ['A sakura é comumente usada para fazer qual tipo de arte no Japão?', ['Haiku', 'Origami', 'Ikebana']],
+    18: ['A sakura é associada a qual festival tradicional japonês?', ['Hanami', 'Matsuri', 'Obon']],
+    19: ['Quantas pétalas normalmente têm as flores de sakura?', ['5', '4', 'Varia']],
+    20: ['As flores de sakura são comestíveis?', ['Sim', 'Não', 'Depende da variedade']]
 }
 let begin = 0, indexQ = []
 let content = document.querySelector("#wrapper")
