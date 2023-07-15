@@ -1,7 +1,5 @@
 
 
-var Local=document.getElementById("#local-atual");
-
 var Local = document.getElementById("local-atual");
 
 function loc() {
