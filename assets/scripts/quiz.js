@@ -34,7 +34,13 @@ function endgame(){
     <p id="points">${5 * players['points'][0]}% de acerto</p>`
 
     if (players['nome'][1] != '')
-        content.innerHTML += `<span id="befplay">Último jogador: ${players['nome'][1]}</span><p>${5 * players['points'][1]}% de acerto</p>`
+        if (players['nome'][1] == players['nome'][0])
+            if (players['points'][1] == players['points'][0])
+                content.innerHTML += `<span id="befplay">Você tirou a mesma porcentagem no seu último jogo</span><p>${5 * players['points'][1]}% de acerto</p>`
+            else
+                players['points'][1] > players['points'][0] ? content.innerHTML += `<span id="befplay">Você diminuiu seus acertos</span><p>${5 * players['points'][1]}% de acerto na última jogada</p>` : content.innerHTML += `<span id="befplay">Você aumentou seus acertos</span><p>${5 * players['points'][1]}% de acerto na última jogada</p>`
+        else
+            content.innerHTML += `<span id="befplay">Último jogador: ${players['nome'][1]}</span><p>${5 * players['points'][1]}% de acerto</p>`
 
     content.innerHTML += `<input id="username" type="text" placeholder="Nome" maxlength="15" autocomplete="off">
     <span id="error-name"></span>
