@@ -29,72 +29,9 @@
         <div id="container">
             <h1>Quiz</h1>
             <div id="wrapper">
-                <form name="quiz" id="quiz">
-                    <div class="question-box">
-                        <h3 class="question">01 - Qual é a cor das flores da cerejeira?</h3>
-                        <div class="answer"><input type="radio" name="q1" id="a11"><label for="a11">Branca</label></div>
-                        <div class="answer right"><input type="radio" name="q1" id="a21"><label for="a21">Rosa</label></div>
-                        <div class="answer"><input type="radio" name="q1" id="a31"><label for="a31">Vermelha</label></div>
-                    </div>
-                    <div class="question-box">
-                        <h3 class="question">02 - Qual é o nome científico da cerejeira?</h3>
-                        <div class="answer"><input type="radio" name="q2" id="a12"><label for="a12">Prunus cerasifera</label></div>
-                        <div class="answer"><input type="radio" name="q2" id="a22"><label for="a22">Prunus persica</label></div>
-                        <div class="answer right"><input type="radio" name="q2" id="a32"><label for="a32">Prunus serrulata</label></div>
-                    </div>
-                    <div class="question-box">
-                        <h3 class="question">03 - De onde a cerejeira é originária?</h3>
-                        <div class="answer"><input type="radio" name="q3" id="a13"><label for="a13">Japão</label></div>
-                        <div class="answer right"><input type="radio" name="q3" id="a23"><label for="a23">China</label></div>
-                        <div class="answer"><input type="radio" name="q3" id="a33"><label for="a33">Coreia</label></div>
-                    </div>
-                    <div class="question-box">
-                        <h3 class="question">04 - Quais são os principais produtos derivados da cerejeira?</h3>
-                        <div class="answer right"><input type="radio" name="q4" id="a14"><label for="a14">Frutas e madeira</label></div>
-                        <div class="answer"><input type="radio" name="q4" id="a24"><label for="a24">Flores e folhas</label></div>
-                        <div class="answer"><input type="radio" name="q4" id="a34"><label for="a34">Raízes e sementes</label></div>
-                    </div>
-                    <div class="question-box">
-                        <h3 class="question">05 - Qual é o período do ano em que as cerejeiras florescem?</h3>
-                        <div class="answer right"><input type="radio" name="q5" id="a15"><label for="a15">Primavera</label></div>
-                        <div class="answer"><input type="radio" name="q5" id="a25"><label for="a25">Verão</label></div>
-                        <div class="answer"><input type="radio" name="q5" id="a35"><label for="a35">Outono</label></div>
-                    </div>
-                    <div class="question-box">
-                        <h3 class="question">06 - Qual é o nome dado ao fenômeno em que as flores da cerejeira caem no chão?</h3>
-                        <div class="answer"><input type="radio" name="q6" id="a16"><label for="a16">Hanami</label></div>
-                        <div class="answer right"><input type="radio" name="q6" id="a26"><label for="a26">Sakura</label></div>
-                        <div class="answer"><input type="radio" name="q6" id="a36"><label for="a36">Yamazakura</label></div>
-                    </div>
-                    <div class="question-box">
-                        <h3 class="question">07 - Qual é o significado cultural da cerejeira no Japão?</h3>
-                        <div class="answer right"><input type="radio" name="q76" id="a17"><label for="a17">Pureza e beleza</label></div>
-                        <div class="answer"><input type="radio" name="q7" id="a27"><label for="a27">Força e coragem</label></div>
-                        <div class="answer"><input type="radio" name="q7" id="a37"><label for="a37">Sabedoria e conhecimento</label></div>
-                    </div>
-                    <div class="question-box">
-                        <h3 class="question">08 - Qual é o nome do famoso festival de cerejeiras em Washington, D.C.?</h3>
-                        <div class="answer right"><input type="radio" name="q8" id="a18"><label for="a18">Festival das Cerejeiras em Flor</label></div>
-                        <div class="answer"><input type="radio" name="q8" id="a28"><label for="a28">Festival da Primavera</label></div>
-                        <div class="answer"><input type="radio" name="q8" id="a38"><label for="a38">Festival das Flores</label></div>
-                    </div>
-                    <div class="question-box">
-                        <h3 class="question">09 - Qual é o nome da técnica de cultivo de cerejeiras em que as árvores são podadas para formar uma cúpula?</h3>
-                        <div class="answer right"><input type="radio" name="q9" id="a19"><label for="a19">Niwaki</label></div>
-                        <div class="answer"><input type="radio" name="q9" id="a29"><label for="a29">Bonsai</label></div>
-                        <div class="answer"><input type="radio" name="q9" id="a39"><label for="a39">Ikebana</label></div>
-                    </div>
-                    <div class="question-box">
-                        <h3 class="question">10 - Qual é o nome dado às cerejas japonesas usadas em sobremesas e bebidas?</h3>
-                        <div class="answer"><input type="radio" name="q10" id="a10"><label for="a10">Maraschino</label></div>
-                        <div class="answer"><input type="radio" name="q10" id="a20"><label for="a20">Amarena</label></div>
-                        <div class="answer right"><input type="radio" name="q10" id="a30"><label for="a30">Sakuranbo</label></div>
-                    </div>
-                    <div id="btn-quiz">
-                        <button type="button" id="verify" class="btn" onclick="showanswers()">Verificar respostas</button>
-                        <button type="button" id="reload" class="btn" onclick="window.location.reload()">&#10226;</button>
-                    </div>
-                </form>
+                <input id="username" type="text" placeholder="Nome" maxlength="15" autocomplete="off">
+                <span id="error-name"></span>
+                <button class="btn play" type="button" onclick="play()"><img src="assets/icons/play-solid.svg" alt="icone de play"></button>                
             </div>
         </div>
 
@@ -118,15 +55,7 @@
             </div>
         </footer>
 
-        <script>
-            function showanswers(){
-                document.querySelectorAll(".answer").forEach(wrong => {
-                    wrong.style.backgroundColor = "#af531d";
-                });
-                document.querySelectorAll(".right").forEach(right => {
-                    right.style.backgroundColor = "#598165";
-                });
-            };
-        </script>
+        <script src="assets/scripts/quiz.js"></script>
+        <script src="assets/scripts/style.js"></script>
     </body>
 </html>
